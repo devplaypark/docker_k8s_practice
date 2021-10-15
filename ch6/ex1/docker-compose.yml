@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+
+  echo:
+    image: hello-world:$ECHO_IMAGE_TAG
+    restart: always
+    ports:
+        - 63000:8080

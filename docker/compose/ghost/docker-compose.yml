@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    ghost:
+        image: ghost:latest
+        volumes:
+            - ./ghost_data:/var/lib/ghost/content
+        restart: always
+        ports:
+            - "60000:2368"
